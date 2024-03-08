@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3477ae541c.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAABZVBMVEX///8AAADuolWJ4+P535Dejz730G1n0tT5qlndl0/mlECJVyTll0iR8PDypVa8f0Gtby82W1vc3NxMTEz/6peN6uqEWy7pnE7V1dXDw8Po6Ohp1tiNjY329vY5OTmcnJxt3uDMzMy6urppaWl+fn5ycnJUVFQdIBT/853/2XGTk5NcXFz41XoxMTF9fX3/5pQsSUmD2togICCtra0TExP/3nQdMjJBa2s/g4R90dEWFhZgw8WlpaUmVFV+UCGQYjKicDpGLxYbGBA/OCR3bUXCs3PSw33lzX7IsF2ghkRTSifnx2itlU2MglMtJRJnXTqIczugkl4zKhVKQipYTSf/98D70mP98tn525X65LByaENnWDFzaTbBolPGuHaqm2RRTDETIiIXKSlorq5ZlZVLnJ1cdna67u9Xi4uf4eMALzBaPR5lRCOyiGWsbCn21rvjo2knGAnJgTf36Nz0x59xTSilekDDtdQlAAAK1ElEQVR4nO2d+1vbRhaGMbC2cI0pibk6AhtyMzTB3CGEhoRbmhsJaTfba0IdNmxJ282m2b+/ljRnZiSNpJElcmb0+P0hDw+MnfN5zsx8mpt7ej4XZn16enZqJZdbun5lennS/Gz/8edh/OrlnIfZmUnsqFLDnJ7yyiMi69ihpYJ5VSzPZioDGqdD9FlcvoQdYTLGb0UIbDOHHWQS5qL1Wamqb5dz3atl5YbFA5/GCexIO8N0Z+ju3v5B/02LyuHDbx65Jc5gB9sJboF7BwuVhX7KV43HT475vy9jh9sBvMCn/Zw6h3yj8fCZ1rXICTzqr3j1WRLz+dUnGrfFayz0fZE+R2Ij/5KV06tHXaZxPzj0JSgnMd94TktOYQcdh0ka9jN/C2TdjSVx9RtaVqehfx6CvhGsTyBRHwM3QWMO00fyNL9KE/UyduDS0H70ILQKQWKDDv+6PGnMQMAvAnpRT57m87p1NlCFu1E1SCvxiV6VOA7h/iKh0KnEVXBws9jBSwGD/cub0QJJJeYf6jTsU8d9ICOQVGIDKlEHewpJehzZzfAKn2iUplegI5VohSxNH5NXrWgwjzpLYj2UE0gUNr7VpiGaKyRJJQVCmoJ3U/9R2CSRHsk1QzroQ2+qvv2+RCJ9KtkMvQ3xNraASMCy7cdU2Himi3GDOW650ZApXIVJG2wBkcx1FQYpvKGLQrA00gKhHT7XxtQ4MxhPZQcLUAidqQYzGebtnMyzr09h4/FuLrc0jh2+JN9JDxV0xLea4j+x45bnlbxATmE+owqZwPy/sOOOQWcKv8cOOwbf9/cvVCoLNpXgRmmVabQ7mTZWkr7CDjsGrw4PXuz9cPRy9+WbH/ZeHBxW/H3rQqX/4PXe3o+Pdncf/fjT858f57/Cjlqe+lXvBprdvV9cIhduHr5+41ntPn4zo8EDfhszaHvC08MKrb79XXGZefXHw8lr4tBtjmyNC5XXIWWm1F4pNa+ExG6x11+p7N8IL3Nd4Xqsr0QIbLN/FF3mKraQIMI2sMVjSc0Zt1lfoGvNZnMtQsyJVebE92sV575nXBH+utHaXOwbGRnpW1xsbQTIXH9Ly2yeDbv/No2txw/fyWxsWnED7Z83N3zymi2+TLtQ36mrKtWTyBS+HRns8zJY23B1Q8ObgyPeMiO11prKEmHxfr3Pr8+iVlinwa9tBZSpnXKfg3Jt8d92WC1x7G2qtS0S/tmIr/6gTLXQZBIV61HfDbaaJ2d9QbHb4Vft8E8DP4R2mUKNNdk72JpcvGu3o0F/23JRKNRap6eFaiG8zCmVqMzQf6lu9oRKY+G367HQ/ldWohoGzrSOUpyFZB5jsUBYDC3DElWNVYwl0nvISKw6AqvtSgws3y5T21apP4VtiFKV2GcLrFlj+3ZgPVpFYNBYwpbXBmLZlFJot0LSzgKHDFZEhY21dJeeVJbaFVQjr3gb9BKrDAyL17EF0o2Ww3JZalcQeclK0EusMluqDPvmnVhJalcQ1GHwa/hKvIussE7iaEpWoa0QDGpg/8s11tw8skKYeApsUz6qLAMDPxZ7UIGaRp5ihGYYMoR7sEb0k4hXWc6Ajom4K4qwe6YpXYWuNA1riDRNcZ8TYVP+unQztM0pBB82XtBcvoKqsB4VqgCuIQZ+MAXO1+Cu7N8lobZiKSxQhSG2plD71SmEa9xgckZ6NCTRk+CHQxXCpI2OCqtrER2U/gqbXYVWZ7qhQk8z15nCwppEOwSHjjviw+Nv2n2pMxNQ2M6tTCFvkoJdbHHGw4LseNhuiv/BldeT2NOEPVzYvMMW2IkvXeR86VZwGQcFti7ApQLyzxbccBj4qiooxJbXw54P5bsarhkG1jwIxG+GbCIqzjM+DHSBrXdRnWbInWmWHRGr3DxNK7iMMknKHvJlK5Gbsw+ca1MpSbn50tagDLVaDSYTc2fBZWr2Ag62NgJMJ56sD0uwvb1Nl0BDymxvnG4pMNw7uPdgpMhvyhwKDrjIKwVmFRjwLS5Fh9opityvtBwdacfcwhZnMR4dZwJUOEJzcc3QBn8lv36xAtEXZrjLhEYHjPQoD9FN4OidDSTpjtGbJuUySMRO00liae6nK7AtcYcoxN7AB4PhaNoKewfIO2Pvi7p4hdiHu7Nfh6azIyr3IW2FBrRD7J0KtC8dNcop6isbUIXofSk7gnA+NJAi9+Bt8S87ucAnC5tr2AIF17CmC7ql4W8QvAhwtykQJqLj7Bh8321zYTM1uXn0boYwLnFmrROUSFHC8p3oeONyW4FOhgO+GOCL5JyTt1JLIFVYTM7X5K0UuwOEKvxHUroKsQCFpcSMKa4w+QOGMdpViENXYVdhVyE+XYVdhV2F+HQV6q8Qrm4ZSK7wPXkrxZ6AYUPGTuJKLJN3UuOgOqNO4solXaGhKzL4B4A9gMJ7CSVCFSpxEt8F3bEwlEiiAfNQqjVDfoUmgcRyLxWowlYhD/T7gXKfeo1yJxjGEJtaVq4K3Ss05ztD8dkZ5d5BpeluSpo7+FQbKghhVybGRMEctUltsVQxw8aRzr2Ct1StQYuJFNagsLcIRRB5v2cUKt/tCSz7voJbnjl1W6Cb8YmJ3//4Uh4QiB13LP6MsWL4P8hQ7KBj8VF+na34iSjE3koak//KLxl+IApVHiUE/CldiZCk+nyFpYN0mha/IAqVdNthyFZhEZJUg5HQzV/FMUqpFCKRCFTher14fCy6H+DHxCqLMPWkuFsT4Z9YFGks3icK8e8PjM1fY/6ZmOAk1cvQOHjT1MlVbxWCZVNw6ika4XyaR2IRZtfU/+JDAaI09WUqnG9SZStpLD4aZeHcKS/wD52TtOfu+/N7vYKlGi5R6S429IMjnWDPEX8QVSIbNYqQpJq5bhsyfyo8EUUV6uq6bWBuUaQQ8pS6bvW/YFUAKBwSLZqCQhjutXPdFnCnojBNx9xJqqOhYUs14oN7bteNfciwQ8jRxNyAKE1LurtuC5gcFi9865+kbFlYfM6bd90KHMHrCJOmaZBCcN3K7UqQBRYUhZtsStyjoZau26JOBJyL0rTEXLciZ/A6gF5JL65DvV23Q5itKTFDo8uCkwA4e/lekKYlOlYoui1BCrgaU+S+S9R1a7Yg42YqOE01d91AiPvW3tA4gPt+5q9D3V03cAtsjVfimO6uGwh036VsJCnnvr11WNLddQMmpKmvGcKGdW1dNxDkvqnr1nEa0UWdCPG47zH9XTdgwrZfdx3S88xaLsi4EbtvA5JUY9cNCN13GcYKJa7vTEpOkKZGJlw3IHLfhrY7TERMEzGfWJqW6V1l2MGlArjvY1aH9NpH7bZBiYE0Ze7buE9+pcyF1snwu2+apNpOI7rxzX2Xh8hvdHfdFK/7NmDLrPauG/C6b3rGUHvXDUy405QmqZaL92Lctoae1s6A6wbgbKJja4zMJSk7uGe7b2po9NsyGwLR9MCuQrh9NROuG+AfEqnrzsCjIYN339ly3QA3913OyFy3FzjPNlCmJ+4z8WjI4Nw3+Qn/kud0gW8yOTbA0Oi5ZTYEcN9lcN2aL8j4Aff9/wwaGgdw39DPZMh1Azk3GXLdwKxbYeaS1HttRqZcN8F0KdRyX3cU8xlPUua+s5qk7it6Mua6Ae42iYzMdXthl4IsZcx1A+x7BDPnugF6eU3mXDdwGxRmNEmZ+86g6way67qBOUchdhgXiTVgTH3eedK/ARlubEHMsnXCAAAAAElFTkSuQmCC alt="Matcha" width="30" height="30" class="d-inline-block align-text-top">
+          <a class="navbar-brand" href="#">ICYCrim</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Learn
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button class="btn btn-outline-success" type="submit">Sign up</button>
+            </form>
+          </div>
+          
+        </div>
+      </nav>
+
+    <div class="card">
+            <h1 class="text-center" style="letter-spacing: 5px; font-family:Verdana, Geneva, Tahoma, sans-serif; margin:10px">ICYCrim</h1><br></h1>
+            <h5>Taste our Homemade IceCream!</h5>
+            <br>
+            <div class="card-body">
+            <img src="https://img.freepik.com/premium-vector/ice-cream-logo-emblem_9845-102.jpg" class="card-img-top" alt="Description of image" style="position: relative; margin:auto; z-index: 1;">
+            <p class="card-button"></p>
+                <div id="liveAlertPlaceholder"></div>
+<button type="button" class="btn btn-primary" id="liveAlertBtn">Visit Here!</button>
+            </a>
+        </div>
+        </div>
+
+    <div class="container">
+        <h3 class="headeing">FLAVORS</h3>  
+        <div class="menu-container">       
+
+            <div class="menu" data-name="p-1"> 
+                <img src="https://www.alyonascooking.com/wp-content/uploads/2019/08/chocolate-ice-cream-recipe-19.jpg" alt="imag">
+                <h3>Chocolate</h3>
+              
+            </div>
+
+            <div class="menu" data-name="p-2">
+                <img src="https://www.davidlebovitz.com/wp-content/uploads/2009/02/Vanilla-ice-cream-recipe-cherry-compote-3-640x929.jpg" alt="imag">
+                <h3>Vanilla</h3>
+               
+            </div>
+
+            <div class="menu" data-name="p-3">
+                <img src="https://goodthingsbaking.com/wp-content/uploads/2022/05/strawberry-ice-cream-recipe-16.jpg" alt="imag">
+                <h3>Strawberry</h3>
+              
+            </div>
+
+            <div class="menu" data-name="p-4">
+                <img src="https://theunlikelybaker.com/wp-content/uploads/2020/06/Matcha-Ice-Cream-Recipe-Feature.jpg" alt="imag">
+                <h3>Matcha</h3>
+               
+            </div>
+
+            <div class="menu" data-name="p-5">
+                <img src="https://lovingitvegan.com/wp-content/uploads/2019/05/Vegan-Coffee-Ice-Cream-Square-2.jpg" alt="imag">
+                <h3>Coffee</h3>
+                
+            </div>
+
+            <div class="menu" data-name="p-6">
+                <img src="https://recipe52.com/wp-content/uploads/2022/07/oreo-ice-cream-3.jpg" alt="imag">
+                <h3>Cookie & Cream</h3>
+              
+            </div>
+        </div>
+    </div>
+
+    
+<div class="menu-preview">   
+
+    <div class="preview" data-target="p-1">
+        <i class="fa-solid fa-xmark"></i>
+       <img src="image/coffe-1.jpg" alt="">
+       <h3>Chocolicious!</h3>
+       <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+       </div>
+       <p>Taste our Chocolate Ice Cream and we promise you'll come back for it!</p>
+       <a href="#" class="buy">order now</a>
+    </div>
+ 
+    <div class="preview" data-target="p-2">
+        <i class="fa-solid fa-xmark"></i>
+       <img src="image/coffe-2.jpg" alt="">
+       <h3>VanillaBlast!</h3>
+       <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+          
+       </div>
+       <p>Choose our Vanilla and have a blast!</p>
+       <a href="#" class="buy">order now</a>
+    </div>
+ 
+    <div class="preview" data-target="p-3">
+        <i class="fa-solid fa-xmark"></i>
+        <img src="image/coffe-3.jpg" alt="">
+        <h3>StrawberryGood!</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+        <p>Get a good taste of our Strawberry Ice Cream!</p>
+        <a href="#" class="buy">order now</a>
+    </div>  
+ 
+    <div class="preview" data-target="p-4">
+        <i class="fa-solid fa-xmark"></i>
+        <img src="image/coffe-4.jpg" alt="">
+        <h3>Mustcha!</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            
+        </div>
+        <p>Tasting our Matcha Ice Cream is a must!</p>
+        <a href="#" class="buy">order now</a>
+    </div> 
+ 
+    <div class="preview" data-target="p-5">
+        <i class="fa-solid fa-xmark"></i>
+        <img src="image/coffe-5.jpg" alt="">
+        <h3>CoffeeWakie!</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            
+        </div>
+        <p>Taste our coffee ice cream if you want something to make you awake!</p>
+        <a href="#" class="buy">order now</a>
+    </div> 
+ 
+    <div class="preview" data-target="p-6">
+        <i class="fa-solid fa-xmark"></i>
+        <img src="image/coffe-6.jpg" alt="">
+        <h3>Cookies & Creamy</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            
+        </div>
+        <p>Get a load of our creamy cookies & Cream!</p>
+        <a href="#" class="buy">order now</a>
+        
+    </div> 
+ 
+ </div>
+ 
+
+    <script src="Assets/JS/JS.js"></script>
+</body>
+</html>

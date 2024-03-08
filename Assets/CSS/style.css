@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Square+Peg&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+
+    transition: all 0.2s linear;
+}
+body{
+    background: #eee;
+}
+.navbar-brand{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+     font-weight: bolder;
+    margin-right: auto;
+ }
+
+ .card-body{
+     width: 95%;
+     margin: auto;
+     text-align: center;
+ }
+ .card-body h1{
+     text-align: center;
+     justify-content: center;
+ }
+ 
+ 
+ .card{
+     position: relative;
+     background-image: url('https://www.proprietorsgreen.com/wp-content/uploads/sites/7/2018/09/iStock-851384166.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+     width: 50%;
+     margin: auto;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     margin-top: 50px;
+     backdrop-filter: blur(5px);
+     box-shadow: 0 8px 54px hsla(178, 71%, 55%, 0.9);
+ 
+ }
+ 
+ .card h1{
+     color: rgb(31, 204, 219);
+     font-weight: bolder;
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 2); 
+     
+ }
+ .card img{
+     position: absolute;
+     z-index: 1;
+     object-fit: cover;
+     border-radius: 20px;
+     box-shadow: 0 8px 24px hsla(0, 0%, 0%, .9);
+ }
+ 
+ .card-body img{
+     width: 30%;
+     height: 30%;
+     object-fit: cover;
+     
+ }
+ 
+ .card h5{
+     color: rgb(68, 196, 235);
+     font-size: 20px;
+     margin: auto;
+     margin-top: -10px; 
+     align-items: center;
+     justify-content: center;    
+ }
+ 
+ .card h6{
+     color: rgb(106, 214, 131);
+     font-size: 20px;
+     margin: auto;
+     text-shadow: 1px 2px 0 rgb(17, 37, 14); 
+     align-items: center;
+     justify-content: center;    
+ }
+ 
+ .btn-primary{
+  font-size: larger;
+  background-color: rgb(42, 126, 33);
+  border: none;
+ }
+ 
+ 
+ .card .btn-primary:hover{
+    border: none;
+     background-color: rgb(44, 199, 230);
+     scale: 1.1;
+     transition: .3s;
+ }
+ 
+ .card-group{
+     margin: 50px 10px 10px 10px;
+     padding: auto;
+ }
+.container{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+.container .headeing{
+    font-size: 3.2rem;
+    color: #333;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.container .menu-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(30%, 1fr));
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+.container .menu-container .menu{
+    text-align: center;
+    padding: 0.5rem;
+    background: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    outline: 0.1rem solid #ccc;
+    outline-offset: -0.7rem;
+}
+.container .menu-container .menu:hover{
+    outline-offset: 0;
+    outline: 0.1rem solid #000;
+
+}
+.container .menu-container .menu img{
+    width: 100%;
+}
+.container .menu-container .menu img:hover{
+    transform: scale(.9);
+}.container .menu-container .menu h3,
+.container .menu-container .menu .price{
+    margin-top: 5px;
+    font-size: 1.5rem;
+    color: #333;
+}
+.menu-preview{
+    position: fixed;
+    top:0; left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+.menu-preview .preview{
+    display: none;
+    padding: 0.5rem; 
+    text-align: center;
+    position: relative;
+    width: 40%;
+    background: #fff;
+}
+.menu-preview .preview img{
+    width: 100%;
+}
+.menu-preview .preview.active{
+    display: inline-block;
+}
+.menu-preview .preview h3{
+    font-size: 2rem;
+    color: #333;
+}
+.menu-preview .preview .stars{
+    color: rgba(44, 210, 228, 0.952);
+    font-size: 1.2rem;
+}
+.menu-preview .preview .stars li{  
+    margin: 0 1rem ;
+    
+} 
+.menu-preview .preview p{
+    font-size: 1.8rem;
+    color: #333;
+}
+.menu-preview .preview a{
+    display: inline-block;
+    width: 10rem; height: 2.6rem;
+    background: rgb(7, 110, 174);
+    color: honeydew;
+    font-size: 1.5rem;
+    border: 0.1rem solid rgb(0, 242, 255);
+    border-radius: 0.5rem;
+}
+.menu-preview .preview a:hover{
+    background: none;
+    color: #71d2f3;
+}
+.menu-preview .preview .fa-xmark{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+    cursor: pointer;
+}
+.menu-preview .preview .fa-xmark:hover{
+    transform: rotate(180deg);
+    color: rgb(20, 224, 247);
+}
